@@ -2,8 +2,7 @@
 // https://github.com/gruntjs/grunt-contrib-sass
 module.exports = {
 	options: {
-		// require: ['font-awesome-sass', 'bootstrap-sass', 'sass-globbing']
-		compass: true
+		require: ['font-awesome-sass', 'bootstrap-sass', 'sass-globbing']
 	},
 	dist: {
 		options: {
@@ -11,7 +10,7 @@ module.exports = {
 			style: 'compressed'
 		},
 		files: {
-			'<%= config.tmp %>/sass/main.css': '<%= config.dev %>/styles/main.scss'
+			'<%= config.tmp %>/styles/main.css': '<%= config.dev %>/styles/main.scss'
 		}
 	},
 	dev: {
@@ -21,7 +20,7 @@ module.exports = {
 			debugInfo: true
 		},
 		files: {
-			'<%= config.tmp %>/sass/main.css': '<%= config.dev %>/styles/main.scss'
+			'<%= config.tmp %>/styles/main.css': '<%= config.dev %>/styles/main.scss'
 		}
 	}
 };
