@@ -1,1 +1,1 @@
-var greeting = 'Hello, Foundation-Compass!';
+var greeting = 'Hello, Foundation-Sass!';
